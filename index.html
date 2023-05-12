@@ -1,0 +1,35 @@
+---
+title:
+call_to_action: Contact
+background_image_path:
+large_header: false
+testimonials:
+  - message: Ми користимо услуге адвокатске канцеларије "Андреј Н. Мандић & Марко М. Макевић" у свим нашим пословима. Они пружају неупоредиву услугу када је у питању вођење послова.
+    image: "https://placekitten.com/g/60/60?a=.png"
+    name: Огњен Томић, ConsoleWork
+  - message: Правна канцеларија "Правда" је најбоља од најбољих. Као локална канцеларија, бригују о људима и имају чврсте везе са заједницом.
+    image: "https://placebear.com/60/60?a=.png"
+    name: Срђан Теофановић, Troy logistic
+  - message: Њихова стручна спрема је било све чему смо могли да се надамо када смо куповали наш први дом. Топло препоручујем свима.
+    image: "https://placebear.com/60/60?a=.png"
+    name: О. и К. Томић
+_options:
+  image:
+    width: 60
+    height: 60
+---
+  
+<div class="editable">
+	<p>Са нама <strong>на вашој страни,</strong> правда никаде не остаје недостижна - Изградили смо поузданост и успех кроз 20 година праксе.</p>
+
+	<p>Адвокатска канцеларија “Андреј Н. Мандић & Марко М. Макевић” је професионално представништво које већ преко 20 година практикује најбољи однос према клијентима. Уз нашу бригу, знање и вештине који увек доносе резултате, ми смо ту да вам помогнемо</p>
+</div>
+
+<div class="testimonials">
+	{% for testimonial in page.testimonials %}
+		<blockquote class="testimonial">
+			<p class="testimonial-message">{{ testimonial.message }}</p>
+			<p class="testimonial-author"><img src="{% include relative-src.html src=testimonial.image %}" alt="Photo of {{ testimonial.name }}"> {{ testimonial.name }}</p>
+		</blockquote>
+	{% endfor %}
+</div>

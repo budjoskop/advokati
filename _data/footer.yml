@@ -1,0 +1,30 @@
+- title: Странице
+  links:
+    - name: Почетна
+      link: /
+    - name: О нама
+      link: /about/
+    - name: Услуге
+      link: /services/
+    - name: Контакт
+      link: /contact/
+    - name: Блог
+      link: /blog/
+- title: Социјалне Мреже
+  links:
+    - name: Facebook
+      link: http://facebook.com/
+      social_icon: Facebook
+      new_window: true
+    - name: Twitter
+      link: https://twitter.com/budjoskop
+      social_icon: Twitter
+      new_window: true
+    - name: Instagram
+      link: http://instagram.com/
+      social_icon: Instagram
+      new_window: true
+    - name: LinkedIn
+      link: https://www.linkedin.com/in/ognjentomic/
+      social_icon: LinkedIn
+      new_window: true
